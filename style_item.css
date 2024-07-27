@@ -1,0 +1,156 @@
+/*style_item.css*/
+
+/*layout dell'ITEM in item.html*/
+
+
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .book-item {
+            margin-top: 2rem;
+        }
+
+        .book-cover-wrapper {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-bottom: 1rem;
+        }
+
+        .book-cover {
+            max-width: 30%;
+            height: auto;
+        }
+
+        .book-description {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    /* layout dell'HEADER */
+
+    .header {
+        background-color: #f1f1f1; 
+        padding: 1rem; 
+        text-align: center;
+        margin-bottom: 4rem; 
+    }
+
+    /*layout dell'ASIDE*/
+
+        .aside {
+            margin-top: 4rem; 
+            padding: 2rem; 
+            background-color: #000000
+        }
+        
+        .aside-content {
+            background-color: transparent; 
+            border: none; 
+        }
+
+
+        /* layout del bottone XML/DC */
+            .btn-custom {
+                margin-top: 4rem; 
+                margin-bottom: 2rem; 
+                display: block; /* larghezza disponibile massima*/
+                width: 100%; /* larghezza rispetto all'aside */
+                background-color: #ffffff; 
+                color: #000000; 
+                border: 1px solid #000000; 
+                text-align: center; 
+                padding: 0.5rem; 
+                cursor: pointer; /* cambia il cursore al passaggio del mouse*/
+                text-decoration: none; /* toglie la sottolineatura nei link */
+                border-radius: 12px; 
+            }
+        
+        /* Effetto hover del bottone XML/DC */
+            .btn-custom:hover {
+                background-color: #f1f1f1; /*beige*/ 
+                color: #000000; 
+                border-color: #000000;
+            }
+
+
+        /* Effetto clic del bottone XML/DC */
+            .btn-custom:active {
+                background-color: #1a6a70; 
+                color: #ffffff; 
+                border-color: #ffffff; 
+            }
+
+        /* layout del bottone di condivisione */
+            .btn-share {
+                margin-top: 1rem; 
+                margin-bottom: 4rem; 
+                display: block; 
+                width: 100%; 
+                background-color: #ffffff; 
+                color: #000000; 
+                border: 1px solid #000000; 
+                text-align: center; 
+                padding: 0.5rem; 
+                cursor: pointer; 
+                text-decoration: none; 
+                border-radius: 12px; 
+            }
+
+        /* Effetto hover del bottone di condivisione */
+            .btn-share:hover {
+                background-color: #f1f1f1; 
+                color: #000000; 
+                border-color: #000000; 
+            }
+
+        /* Effetto clic sul bottone di condivisione */
+            .btn-share:active {
+                background-color: #1a6a70; 
+                color: #ffffff; 
+                border-color: #ffffff; 
+            }
+
+    
+        /* Stile link "SCOPRI DI PIù" nell'aside */
+            .text-white {
+                color: #ffffff; /*bianco*/
+                text-decoration: none; 
+            }
+            
+            .text-white.custom-link:hover {
+                color: #cccccc; 
+                text-decoration: underline; 
+            }
+
+        /* Stile del testo del link nella descrizione del libro */
+            .book-description a {
+                color: #1a6a70; 
+                text-decoration: none; 
+            }
+
+            .book-description a:hover {
+                color: #104d4d; 
+                text-decoration: underline; 
+            }
+
+        /* Stile della card */
+            .card-spaced {
+                margin-top: 4rem; 
+            }
+
+        /* Stile della sezione della seconda tabella */
+            .seconda-sezione {
+                margin-top: 3rem; 
+            }
+
+            .seconda-sezione h3 {
+                margin-bottom: 1rem; 
+            }
+
+            .seconda-sezione p {
+                margin-bottom: 1.5rem; 
+            }

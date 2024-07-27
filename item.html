@@ -1,0 +1,235 @@
+
+<!--pagina ITEM-->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<!--HEAD-->
+<head>
+    <!--il titolo appare nella barra del browser-->
+        <title> Eva Luna, Allende - La biblioteca di Pier Vittorio Tondelli </title>
+        <!-- charset associa il set di caratteri all'unicode e garantisce la interoperabilità dei caratteri nei browser -->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-language" content="it">
+        <meta name="description" content="Sito dedicato alla biblioteca privata dello scrittore Pier Vittorio Tondelli e alla visualizzazione di postille e annotazioni presenti sui volumi" />
+        <meta name="keywords" content="Tondelli, Pier Vittorio, Pier Vittorio Tondelli, libri, books, library, biblioteca, biblioteca privata, collezione libraria,  volumi, romanzi, saggi, scrittori italiani, letteratura, letteratura italiana, letteratura contemporanea, filologia, filologia italiana, filologia d'autore, chiose, sottolineature, annotazioni, lettura, scrittura, studio" />
+        <meta name="author" content="Elena Sacchini">
+        <!-- viewport è per la visualizzazione del layout della pagina su device diversi -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link al foglio di stile-->
+        <link href="style.css" rel="stylesheet">
+        <!--font Awesome per il bottone CONDIVIDI-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CSS -->
+        
+        <!-- DUBLIN CORE METADATA -->
+            <meta name="DC.Title" content="La biblioteca di Pier Vittorio Tondelli">
+            <meta name="DC.Creator" content="Elena Sacchini">
+            <meta name="DC.Subject" content="Raccolta bibliografica dei volumi appartenenti alla biblioteca personale di Pier Vittorio Tondelli e digitalizzazione delle postille presenti nei volumi">
+            <meta name="DC.Description" content="Il sito raccoglie e cataloga gli oltre duemila volumi di cui è composta la biblioteca personale di Pier Vittorio Tondelli. Presenta inoltre la possibilità di consultare le digitalizzazioni delle pagine postillate dall'autore">
+            <meta name="DC.Publisher" content="Elena Sacchini">
+            <meta name="DC.Contributor" content="Centro Studi Tondelli">
+            <meta name="DC.Date" content="giugno 2024">
+            <meta name="DC.Type" content="Sito web">
+            <meta name="DC.Format" content="HTML/CSS/JS/BOOTSTRAP">
+            <meta name="DC.Identifier" content="https://github.com/elenasacchini/Biblioteca-Tondelli.git">
+            <meta name="DC.Source" content="Wikipedia, Centro di documentazione Pier Vittorio Tondelli">
+            <meta name="DC.Language" content="it">
+            <meta name="DC.Relation" content=".">
+            <meta name="D.C.Coverage" content="Italia, 2014">
+            <meta name="DC.Rights" content="Copyright Centro Studi Tondelli">
+
+        <!--link foglio di stile-->
+        <link rel="stylesheet" href="style_item.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+<!--BODY-->
+
+<body>
+    
+    <!--HEADER-->
+
+        <header id="catalogo" style="background: url('img/catalogo.jpg') no-repeat center center; background-size: cover; color: #ffffff; padding: 5rem 0;">
+        </header>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">Biblioteca Tondelli</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="autore.html">L'autore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Le opere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Il progetto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Digitalizzazione</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Il catalogo</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    
+    
+    <!--SEZIONI-->
+
+        <div class="container">
+        <div class="row">
+            
+    <!--ASIDE-->
+
+            <aside class="col-md-3" style="margin-top: 2rem;">
+                <div class="aside-content">
+
+                    <!--BREADCRUMBS-->
+                    
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Eva Luna</li>
+                        </ol>
+                    </nav>
+
+                    <!--Bottone per link XML/DC-->
+                    
+                    <a href="xml-valido-dc.xml" target="_blank" class="btn-custom">XML/DC</a>
+                    
+                    <!--Bottone CONDIVIDI-->
+                    <a href="#" class="btn-share"><i class="fas fa-share-alt"></i> Condividi</a>
+
+                    <h5>Digitalizzazione</h5>
+                    <p>È prevista una futura acquisizione digitale dei volumi del catalogo che contengono note autografe e degli eventuali allegati.<a href="#" class="text-white custom-link"> 
+                        Scopri di più.</a></p>
+                    
+                    <!-- Card di Bootstrap -->
+                    <div class="card card-spaced">
+                        <div class="card-body">
+                            <h5 class="card-title">Isabel Allende</h5>
+                            <p class="card-text">Scopri di più sulla biografia di Isabel Allende su Wikipedia.</p>
+                            <a href="https://it.wikipedia.org/wiki/Isabel_Allende" target="_blank" class="btn btn-primary" style="background-color: #1a6a70; color: #ffffff; border-color: #1a6a70;">Leggi la Biografia</a>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+    
+        <!--SEZIONE PRINCIPALE-->
+
+            <main class="col-md-9">
+                <div class="book-item">
+                    <div class="book-cover-wrapper">
+                        <img src="img/evaluna1996.jpg" alt="Book Cover" class="book-cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>Eva Luna</h2>
+                        <p>Eva Luna è un romanzo di Isabel Allende, pubblicato nel 1987. In Italia il romanzo è apparso nel 1988, nella traduzione di Angelo Morino. <a href="https://it.wikipedia.org/wiki/Eva_Luna" target="_blank" title="Fonte" style="color: #1a6a70;">Fonte</a></p>
+
+                    </div>
+
+        <!--Tabella 1 - ICCU-->
+                    <div>
+                    <h5>Catalogazione ICCU</h5>
+                    <a href="https://opac.sbn.it/risultati-ricerca-avanzata/-/opac-adv/index/1/ITICCUCAG0052952?fieldvalue%5B0%5D=eva+luna&fieldaccess%5B0%5D=Titolo%3A4%3Anocheck&fieldstruct%5B0%5D=ricerca.frase_esatta%3A4%3D7&fieldop%5B0%5D=AND%3A%40and%40&struct%3A3008=ricerca.frase%3A4%3D1&struct%3A8019=ricerca.parole_almeno_una%3A%40or%40&struct%3A3022=ricerca.parole_tutte%3A4%3D6&struct%3A3020=ricerca.parole_tutte%3A4%3D6&struct%3A3087=ricerca.parole_tutte%3A4%3D6&struct%3A1001=ricerca.parole_almeno_una%3A%40or%40&struct%3A5522=ricerca.parole_almeno_una%3A%40or%40&struct%3A3024=ricerca.parole_tutte%3A4%3D6&struct%3A3091=ricerca.parole_tutte%3A4%3D6&struct%3A3050=ricerca.parole_tutte%3A4%3D6&_cacheid=1721930203437&struct%3A3018=ricerca.parole_tutte%3A4%3D6&struct%3A5533=ricerca.parole_almeno_una%3A%40or%40&struct%3A3058=ricerca.parole_tutte%3A4%3D6&struct%3A7016=ricerca.parole_tutte%3A4%3D6&dataf%5B%5D=1996&count_noelet=&formato_elet=&__id=generated_id_202" style="color: #1a6a70;" target="_blank">OPAC SBN</a>
+                        
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr><td>Livello bibliografico</td><td>Monografia</td></tr>
+                                <tr><td>Tipo documento</td><td>Testo</td></tr>
+                                <tr><td>Autore principale</td><td>Allende, Isabel</td></tr>
+                                <tr><td>Titolo</td><td>Eva Luna /Isabel Allende</td></tr>
+                                <tr><td>Edizione</td><td>8. ed</td></tr>
+                                <tr><td>Pubblicazione</td><td>Milano : Feltrinelli, 1996</td></tr>
+                                <tr><td>Descrizione fisica</td><td>267 p. ; 22 cm.</td></tr>
+                                <tr><td>Collezione</td><td>Narratori</td></tr>
+                                <tr><td>Numeri</td><td>[ISBN] :88-07-01357-6</td></tr>
+                                <tr><td>Note generali</td><td>Trad. di Angelo Marino</td></tr>
+                                <tr><td>Titolo dell'opera</td><td>Eva Luna</td></tr>
+                                <tr><td>Nomi</td><td>Allende, Isabel
+                                    <a href="https://opac.sbn.it/risultati-autori/-/opac-autori/detail/CFIV016588" style="color: #1a6a70;" target="_blank">Scheda di autorità</a>, <a href="https://viaf.org/viaf/61556825/#Allende,_Isabel" style="color: #1a6a70;" target="_blank">VIAF</a>, Morino, Angelo <a href="https://opac.sbn.it/risultati-autori/-/opac-autori/detail/CFIV011742" style="color: #1a6a70;" target="_blank">Scheda di autorità</a><a href="https://viaf.org/viaf/17235461/#Morino,_Angelo" style="color: #1a6a70;" target="_blank">, VIAF</a></td></tr>, 
+                                <tr><td>Classificazione Dewey</td><td>863(19.) NARRATIVA SPAGNOLA</td></tr>
+                                <tr><td>Lingua di pubblicazione</td><td>Italiano</td></tr>
+                                <tr><td>Lingua dell'opera originale</td><td>Spagnolo</td></tr>
+                                <tr><td>Paese di pubblicazione</td><td>Italia</td></tr>
+                                <tr><td>Codice identificativo</td><td>IT\ICCU\CAG\0052952</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+
+
+        <!--TABELLA 2 - Fondo Tondelli-->
+
+        <div class="seconda-sezione">
+                        <h5>Catalogazione Fondo Tondelli</h5>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr><td>Inventario</td><td>400100</td></tr>
+                                    <tr><td>Collocazione</td><td>CDT BP 1.6.39</td></tr>
+                                    <tr><td>Autore</td><td>Allende Isabel</td></tr>
+                                    <tr><td>Editore</td><td>Feltrinelli</td></tr>
+                                    <tr><td>Traduttore</td><td>Angelo Morino</td></tr>
+                                    <tr><td>Data di edizione</td><td>1988, aprile</td></tr>
+                                    <tr><td>Pagine</td><td>266</td></tr>
+                                    <tr><td>Soggetto</td><td>Narrativa moderna e contemporanea</td></tr>
+                                    <tr><td>Qualificatore geografico</td><td>Cile</td></tr>
+                                    <tr><td>Qualificatore linguistico</td><td>Spagnolo latino-americano</td></tr>
+                                    <tr><td>Indicazioni manoscritte</td><td>No</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                </main>
+            </div>
+        </div>
+
+    
+
+    <!-- Prefooter -->
+
+        <section class="prefooter-section" style="text-align:center;">
+            <div class="pre-footer" style="display: inline-block;"> Impostazioni | Credits | Licenze</div>
+            <div style="display: inline-block; margin-top: 10px;"><a href="#top"><img src="img/freccia.png" width="30" height="30" alt="Freccia per tornare in alto"></a></div>
+        </section>
+
+    <!-- Footer -->
+
+        <footer class="footer bg-light mt-5 p-3 text-center">
+            <p>&copy; 2024 | Elena Sacchini | Corso di Digital Humanities</p>
+        </footer>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script src="scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<!--tondelli_biblioteca-->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<!--HEAD-->
+    <head>
+        <!--il titolo appare nella barra del browser-->
+        <title> La biblioteca di Pier Vittorio Tondelli </title>
+        <!-- charset associa il set di caratteri all'unicode e garantisce la interoperabilità dei caratteri nei browser -->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-language" content="it">
+        <meta name="description" content="Sito dedicato alla biblioteca privata dello scrittore Pier Vittorio Tondelli e alla visualizzazione di postille e annotazioni presenti sui volumi" />
+        <meta name="keywords" content="Tondelli, Pier Vittorio, Pier Vittorio Tondelli, libri, books, library, biblioteca, biblioteca privata, collezione libraria,  volumi, romanzi, saggi, scrittori italiani, letteratura, letteratura italiana, letteratura contemporanea, filologia, filologia italiana, filologia d'autore, chiose, sottolineature, annotazioni, lettura, scrittura, studio" />
+        <meta name="author" content="Elena Sacchini">
+        <!-- viewport è per la visualizzazione del layout della pagina su device diversi -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <!-- DUBLINCORE METADATA -->
+            <meta name="DC.Title" content="La biblioteca di Pier Vittorio Tondelli">
+            <meta name="DC.Creator" content="Elena Sacchini">
+            <meta name="DC.Subject" content="Raccolta bibliografica dei volumi appartenenti alla biblioteca personale di Pier Vittorio Tondelli e digitalizzazione delle postille presenti nei volumi">
+            <meta name="DC.Description" content="Il sito raccoglie e cataloga gli oltre duemila volumi di cui è composta la biblioteca personale di Pier Vittorio Tondelli. Presenta inoltre la possibilità di consultare le digitalizzazioni delle pagine postillate dall'autore">
+            <meta name="DC.Publisher" content="Elena Sacchini">
+            <meta name="DC.Contributor" content="Centro Studi Tondelli">
+            <meta name="DC.Date" content="giugno 2024">
+            <meta name="DC.Type" content="Sito web">
+            <meta name="DC.Format" content="HTML/CSS/JS/BOOTSTRAP">
+            <meta name="DC.Identifier" content="https://github.com/elenasacchini/Biblioteca-Tondelli.git">
+            <meta name="DC.Source" content="Wikipedia, Centro di documentazione Pier Vittorio Tondelli">
+            <meta name="DC.Language" content="it">
+            <meta name="DC.Relation" content=".">
+            <meta name="D.C.Coverage" content="Italia, 2014">
+            <meta name="DC.Rights" content="Copyright Centro Studi Tondelli">
+
+        <!--link foglio di stile-->
+        <link rel="stylesheet" href="style_index.css">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+
+<!--BODY-->
+    <body>
+    
+        <!-- NAVBAR -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html">Biblioteca Tondelli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="autore.html">L'autore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Le opere</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Il progetto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Digitalizzazione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Il catalogo</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatti</a>
+                        </li>
+                    </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!--HEADER-->
+
+        <header>
+        
+            <!--CAROSELLO-->
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!--indicatori del carosello-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            
+                <!--Carosello - Autore-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/tondelli1.jpg" class="d-block w-100" alt="L'autore">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>L'autore</h1>
+                                <p>Scopri la biografia e le opere di Pier Vittorio Tondelli.</p>
+                                <p><a class="btn btn-lg btn-primary" href="autore.html" style="background-color: #1a6a70; border-color: #1a6a70;">Scopri di più</a></p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   <!--Carosello - Il Progetto-->
+                    <div class="carousel-item">
+                        <img src="img/tondelli2.jpg" class="d-block w-100" alt="Il progetto">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Il progetto</h1>
+                                <p>Informazioni sul progetto di catalogazione e digitalizzazione della biblioteca.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#progetto" style="background-color: #1a6a70; border-color: #1a6a70;">Scopri di più</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Carosello - Il catalogo-->
+                    <div class="carousel-item">
+                        <img src="img/tondelli3.jpg" class="d-block w-100" alt="La biblioteca">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>Il catalogo</h1>
+                                <p>Esplora i volumi della biblioteca personale di Pier Vittorio Tondelli.</p>
+                                <p><a class="btn btn-lg btn-primary" href="catalogo.html" style="background-color: #1a6a70; border-color: #1a6a70;">Scopri di più</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--Bottoni previous-next-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+    
+    
+    <!--SEZIONI CENTRALI-->
+
+            <!--Introduzione-->
+            
+            <section class="intro text-center my-5">
+                <div class="container" style="text-align: center;">
+                    <h1 >La biblioteca di Pier Vittorio Tondelli</h1>
+                    
+                </div>
+            </section>
+
+            <!--L'autore-->
+
+                <section id="autore" style="background-color: #1a6a70; color: #ffffff; padding: 5rem 0;">
+                    <div class="container">
+                        <div class="autore">
+                            <h2 style="text-align: center;">L'autore</h2>
+                            <p style="text-align: justify;" >Pier Vittorio Tondelli (Correggio, 14 settembre 1955 – Correggio, 16 dicembre 1991) è stato uno scrittore, curatore editoriale, saggista, giornalista pubblicista e drammaturgo italiano. È l'autore di Altri libertini, romanzo di culto fra i giovani italiani degli anni Ottanta, ed è considerato uno dei maggiori esponenti della letteratura postmoderna italiana. <a href="autore.html" target="_blank" title="Sito Pier Vittorio Tondelli Wikipedia" class="text-white">Scopri di più</a></p>
+                        </div>
+                    </div>
+                </section>
+
+            <!--Il progetto-->
+
+                <section id="progetto" class="py-5">
+                        <div class="progetto">
+                            <h2 style="text-align: center;">Il progetto</h2>
+                            <p style="text-align: center,justify;"> La biblioteca personale di Pier Vittorio Tondelli è stata donata dalla famiglia Tondelli alla Città di Correggio nell’ottobre 2018. È composta da 2.552 libri reperiti nelle abitazioni di Pier Vittorio Tondelli e da un migliaio di altri documenti tra articoli di rassegna stampa, appunti, corrispondenze, e audiocassette. Il suo ordinamento a scaffale all’interno del Centro di Documentazione rispecchia quello consegnato dalla famiglia. La donazione è stata annunciata al pubblico durante la Giornata Tondelli 2018. Il progetto mira a rendere liberamente consultabili i titoli e le informazioni bibliografiche dell'intera collezione, con l'obiettivo di digitalizzare i volumi per rendere fruibili le numerose annotazioni apportate ai testi. <a href="https://tondelli.comune.correggio.re.it/cataloghi/la-biblioteca-personale-di-tondelli/" target="_blank" title="Fonte originale">Scopri di più</a></p>
+                        </div>
+                    </section>
+
+            <!--Il catalogo-->
+
+                <section id="catalogo" style="background-color: #1a6a70; color: #ffffff; padding: 5rem 0;">
+                    <div class="container">
+                        <div class="catalogo">
+                            <h2 style="text-align: center;">Il catalogo</h2>
+                            <p style="text-align: justify;"> Esplora il catalogo digitale della biblioteca personale di Pier Vittorio Tondelli. La collezione contiene 2.552 volumi, catalogati secondo gli standard bibliografici.   <a href="catalogo.html" target="_blank" title="Catalogo online" class="text-white">Scopri di più</a></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--Blocco Eventi/calendario + Centro studi tondelli-->
+
+                <section id="progetto" class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-lg-6">
+                                <div class="progetto">
+                                    <h2 style="text-align: center;">Eventi</h2>
+                                    <div id="calendar" class="mb-4">
+                                        
+                                        <div id="calendar-placeholder" class="text-center py-4">
+                                            <h3>Calendario Eventi</h3>
+                                            <p>Il calendario degli eventi sarà visualizzato qui.</p>
+                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                            <path d="M.5 1a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0V1.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h13A1.5 1.5 0 0 1 16 2.5v11a1.5 1.5 0 0 1-1.5 1.5H1.5A1.5 1.5 0 0 1 0 13.5v-11zM1.5 2a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H1.5z"/>
+                                            <path fill-rule="evenodd" d="M11.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H12v1.5a.5.5 0 1 1-1 0V8H9.5a.5.5 0 0 1 0-1H11V5.5a.5.5 0 0 1 .5-.5z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+            
+                            
+                            <div class="col-lg-6">
+                                <div class="progetto">
+                                    <h2 style="text-align: center;">Centro Studi Tondelli</h2>
+                                    <p style="text-align: justify;">Il Centro Studi Tondelli si dedica alla ricerca e alla promozione dell'opera di Pier Vittorio Tondelli. Offre numerose attività  ed eventi culturali che approfondiscono l'opera dell'autore e il contesto storico e culturale in cui ha operato.</p>
+                                    <a href="#" class="btn btn-primary d-block mx-auto" style="background-color: #1a6a70; border-color: #1a6a70;">Contatti</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!--PREFOOTER-->
+
+            <section class="prefooter-section" style="text-align:center;">
+                <div class="pre-footer" style="display: inline-block;"> Impostazioni | Credits | Licenze</div>
+                <div style="display: inline-block; margin-top: 10px;"><a href="#top"><img src="img/freccia.png" width="30" height="30" alt="Freccia per tornare in alto"></a></div>
+            </section>
+
+        <!--FOOTER-->
+
+            <footer class="footer bg-light mt-5 p-3 text-center">
+                <p>&copy; 2024 | Elena Sacchini | Corso di Digital Humanities</p>
+            </footer>
+
+            <!-- Link a JS e Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <script src="scripts.js"></script>
+
+        </body>
+</html>

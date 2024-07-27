@@ -1,0 +1,560 @@
+<!--tondelli_biblioteca_catalogo-->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<!--HEAD-->
+    <head>
+                <!--il titolo appare nella barra del browser-->
+                <title> Catalogo - La biblioteca di Pier Vittorio Tondelli </title>
+                <!-- charset associa il set di caratteri all'unicode e garantisce la interoperabilità dei caratteri nei browser -->
+                <meta charset="UTF-8">
+                <meta http-equiv="content-language" content="it">
+                <meta name="description" content="Sito dedicato alla biblioteca privata dello scrittore Pier Vittorio Tondelli e alla visualizzazione di postille e annotazioni presenti sui volumi" />
+                <meta name="keywords" content="Tondelli, Pier Vittorio, Pier Vittorio Tondelli, libri, books, library, biblioteca, biblioteca privata, collezione libraria,  volumi, romanzi, saggi, scrittori italiani, letteratura, letteratura italiana, letteratura contemporanea, filologia, filologia italiana, filologia d'autore, chiose, sottolineature, annotazioni, lettura, scrittura, studio" />
+                <meta name="author" content="Elena Sacchini">
+                <!-- viewport è per la visualizzazione del layout della pagina su device diversi -->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                
+                <!-- DUBLINCORE METADATA -->
+                    <meta name="DC.Title" content="La biblioteca di Pier Vittorio Tondelli">
+                    <meta name="DC.Creator" content="Elena Sacchini">
+                    <meta name="DC.Subject" content="Raccolta bibliografica dei volumi appartenenti alla biblioteca personale di Pier Vittorio Tondelli e digitalizzazione delle postille presenti nei volumi">
+                    <meta name="DC.Description" content="Il sito raccoglie e cataloga gli oltre duemila volumi di cui è composta la biblioteca personale di Pier Vittorio Tondelli. Presenta inoltre la possibilità di consultare le digitalizzazioni delle pagine postillate dall'autore">
+                    <meta name="DC.Publisher" content="Elena Sacchini">
+                    <meta name="DC.Contributor" content="Centro Studi Tondelli">
+                    <meta name="DC.Date" content="giugno 2024">
+                    <meta name="DC.Type" content="Sito web">
+                    <meta name="DC.Format" content="HTML/CSS/JS/BOOTSTRAP">
+                    <meta name="DC.Identifier" content="https://github.com/elenasacchini/Biblioteca-Tondelli.git">
+                    <meta name="DC.Source" content="Wikipedia, Centro di documentazione Pier Vittorio Tondelli">
+                    <meta name="DC.Language" content="it">
+                    <meta name="DC.Relation" content=".">
+                    <meta name="D.C.Coverage" content="Italia, 2014">
+                    <meta name="DC.Rights" content="Copyright Centro Studi Tondelli">
+
+                <!--link foglio di stile CSS-->
+                <link rel="stylesheet" href="style_catalogo.css">
+                <!-- Bootstrap -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+                
+                <!--link alla libreria google charts-->
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script>
+                  google.charts.load('current', {packages: ['corechart']});
+                  google.charts.setOnLoadCallback(drawChart);
+                  ...
+                </script>
+
+
+    <!--css aside-->
+     
+        
+    
+    </head>
+    
+
+<!--BODY-->
+
+    <body>
+        
+        <!--NAVBAR-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="index.html">Biblioteca Tondelli</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="autore.html">L'autore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Le opere</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Il progetto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Digitalizzazione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Il catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatti</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        
+
+
+        <!--HEADER-->
+
+        <header id="catalogo" style="background: url('img/catalogo.jpg') no-repeat center center; background-size: cover; color: #ffffff; padding: 5rem 0;">
+                <div class="container">
+                    <div class="catalogo">
+                        <h2 class="catalog-title">Il catalogo</h2>
+                        
+                    </div>
+                </div>
+        </header>
+
+
+    
+        <!--SEZIONI-->
+
+        <!--ASIDE-->
+
+        <div class="container mt-5 pt-5">
+        <div class="row"> 
+             <aside class="col-md-3" style="background-color: #1a6a70;">
+
+                <nav aria-label="Breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
+                      </ol>
+                    </nav>
+
+                <!--Catalogo-->
+
+                    <h2 style="color: white;">Strumenti per la ricerca</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#" id="sort-title-asc">Ordina per Titolo (A-Z)</a></li>
+                        <li class="list-group-item"><a href="#" id="sort-title-desc">Ordina per Titolo (Z-A)</a></li>
+                        <li class="list-group-item"><a href="#" id="sort-inventory">Ordina per numero di Inventario</a></li>
+
+                        <li class="list-group-item">
+                                    <label for="filter-input">Filtra per:</label>
+                                    
+                                    <div class="mb-2">
+                                <label for="filter-title" class="form-label text-white">Titolo</label>
+                                <input type="text" id="filter-title" class="form-control" placeholder="Filtra per titolo">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-inventory" class="form-label text-white">Inventario</label>
+                                <input type="text" id="filter-inventory" class="form-control" placeholder="Filtra per inventario">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-location" class="form-label text-white">Collocazione</label>
+                                <input type="text" id="filter-location" class="form-control" placeholder="Filtra per collocazione">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-author" class="form-label text-white">Autore</label>
+                                <input type="text" id="filter-author" class="form-control" placeholder="Filtra per autore">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-publisher" class="form-label text-white">Editore</label>
+                                <input type="text" id="filter-publisher" class="form-control" placeholder="Filtra per editore">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-translator" class="form-label text-white">Traduttore</label>
+                                <input type="text" id="filter-translator" class="form-control" placeholder="Filtra per traduttore">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-edition-date" class="form-label text-white">Data di Edizione</label>
+                                <input type="text" id="filter-edition-date" class="form-control" placeholder="Filtra per data di edizione">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-pages" class="form-label text-white">Pagine</label>
+                                <input type="text" id="filter-pages" class="form-control" placeholder="Filtra per pagine">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-subject" class="form-label text-white">Soggetto</label>
+                                <input type="text" id="filter-subject" class="form-control" placeholder="Filtra per soggetto">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-geographic" class="form-label text-white">Qualificatore Geografico</label>
+                                <input type="text" id="filter-geographic" class="form-control" placeholder="Filtra per qualificatore geografico">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-linguistic" class="form-label text-white">Qualificatore Linguistico</label>
+                                <input type="text" id="filter-linguistic" class="form-control" placeholder="Filtra per qualificatore linguistico">
+                            </div>
+                            <div class="mb-2">
+                                <label for="filter-manuscript" class="form-label text-white">Indicazioni Manoscritte</label>
+                                <input type="text" id="filter-manuscript" class="form-control" placeholder="Filtra per indicazioni manoscritte">
+                            </div>
+                            
+
+                        </li>
+                    </ul>
+                
+                    
+                <!-- Grafico note autografe-->
+                
+                <h2 style="color: white;">Note autografe:</h2>
+                <p style="color: white;">Esplora tutte le tipologie di note ai testi apportate dall'autore.</p>
+                    
+                
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                    <div id="chart_div" style="width: 100%; height: 300px; margin-top: 20px;"></div>
+                </div>
+
+                <!-- Filtro per tipologia di note autografe -->
+
+                <div class="form-group mt-3">
+                    <label for="autograph-filter" class="form-label">Tipologia di note autografe</label>
+                    <select class="form-select" id="autograph-filter">
+                        <option value="">Tutte</option>
+                        <option value="dedica autografa">Dedica autografa</option>
+                        <option value="sottolineature">Sottolineature</option>
+                        <option value="note">Note</option>
+                        <option value="allegati">Allegati</option>
+                        <option value="nessuna annotazione">Nessuna annotazione</option>
+                    </select>
+                </div>
+
+            </aside>
+
+        <!--Catalogo bibliografico-->
+
+        <div class="col-md-9">
+            <h1 class="mb-4">Catalogo Bibliografico</h1>
+            <p style="text-align: justify;">In questa pagina potrai trovare tutti gli oltre 2.500 volumi della biblioteca di Pier Vittorio Tondelli e le relative informazioni bibliografiche. </p>
+
+
+        <!--Sezioni delle CARD-->
+
+            <!--Card 1-->
+
+            <div id="page1" class="catalog-page">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Italienische Reise. Literarischer Reisefuhrer durch das heutige Italien</a></h5>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="card-text"><strong>Inventario:</strong> 400000</p>
+                                        <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.8.1</p>
+                                        <p class="card-text"><strong>Autore:</strong> Vollenweider Alice</p>
+                                        <p class="card-text"><strong>Editore:</strong> Quarthefte</p>
+                                        <p class="card-text"><strong>Traduttore:</strong>/</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="card-text"><strong>Data di edizione:</strong> 1985, gennaio</p>
+                                        <p class="card-text"><strong>Pagine:</strong> 205</p>
+                                        <p class="card-text"><strong>Soggetto:</strong> Antologie</p>
+                                        <p class="card-text"><strong>Qualificatore geografico:</strong> Germania</p>
+                                        <p class="card-text"><strong>Qualificatore linguistico:</strong> Tedesco</p>
+                                        <p class="card-text"><strong>Indicazioni manoscritte:</strong> Dedica autografa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+            <!-- Card 2 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Vocabolario della lingua italiana</a></h5>
+                            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400009</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.8.10</p>
+                                <p class="card-text"><strong>Autore:</strong> Devoto - Oli</p>
+                                <p class="card-text"><strong>Editore:</strong> Euroclub</p>
+                                <p class="card-text"><strong>Traduttore:</strong>/</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1986, aprile</p>
+                                <p class="card-text"><strong>Pagine:</strong> 1327</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Dizionari</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Italia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Italiano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> No</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 3 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">I diari di Andy Warhol</a></h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400080</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.6.19</p>
+                                <p class="card-text"><strong>Autore:</strong> Warhol Andy, Pat Hackett (a cura di)</p>
+                                <p class="card-text"><strong>Editore:</strong> De Agostini</p>
+                                <p class="card-text"><strong>Traduttore:</strong> Riccio Ricci</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1989, gennaio</p>
+                                <p class="card-text"><strong>Pagine:</strong> 595</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Autobiografie : artisti e personalità dello spettacolo</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Stati Uniti (USA)</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Inglese americano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> Sottolineature, Note, Allegati </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 4 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="item.html">Eva Luna</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400100</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.6.39</p>
+                                <p class="card-text"><strong>Autore:</strong>Allende Isabel</p>
+                                <p class="card-text"><strong>Editore:</strong> Feltrinelli</p>
+                                <p class="card-text"><strong>Traduttore:</strong> Angelo Morino</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1988, aprile</p>
+                                <p class="card-text"><strong>Pagine:</strong> 266</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Narrativa moderna e contemporanea</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Cile</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Spagnolo latino-americano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> No</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 5 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Roma</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400144</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.5.44 </p>
+                                <p class="card-text"><strong>Autore:</strong> Palazzeschi Aldo</p>
+                                <p class="card-text"><strong>Editore:</strong> Garzanti - Gli elefanti </p>
+                                <p class="card-text"><strong>Traduttore:</strong>/</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1986, gennaio</p>
+                                <p class="card-text"><strong>Pagine:</strong> 241</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Narrativa moderna e contemporanea</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Italia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Italiano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> No</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 6 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Il Maestro e Margherita</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400199</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.3.2</p>
+                                <p class="card-text"><strong>Autore:</strong>  Bulgakov Michail</p>
+                                <p class="card-text"><strong>Editore:</strong> Einaudi</p>
+                                <p class="card-text"><strong>Traduttore:</strong> /</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1967, gennaio</p>
+                                <p class="card-text"><strong>Pagine:</strong> 390</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Narrativa moderna e contemporanea</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Russia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Russo</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> No</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 7 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Lo spazio scenico. Storia dell'arte teatrale</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400215</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.3.18</p>
+                                <p class="card-text"><strong>Autore:</strong> Allardyce Nicoll </p>
+                                <p class="card-text"><strong>Editore:</strong> Bulzoni editore</p>
+                                <p class="card-text"><strong>Traduttore:</strong> /</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1971, gennaio</p>
+                                <p class="card-text"><strong>Pagine:</strong> 350</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Teatro: regia e produzione</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Italia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Italiano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> Sottolineature, Note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 8 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Opera grafica. Introduzione di Pier Vittorio Tondelli</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400293</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.1.1 </p>
+                                <p class="card-text"><strong>Autore:</strong> Braque Georges</p>
+                                <p class="card-text"><strong>Editore:</strong> La casa Usher</p>
+                                <p class="card-text"><strong>Traduttore:</strong>/</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1991, agosto</p>
+                                <p class="card-text"><strong>Pagine:</strong> 154</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Singoli artisti, monografie d'arte</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Francia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Francese</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> No</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="page2" class="catalog-page d-none">
+            <div class="row g-4">
+                
+                
+            <!-- Card 9 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Ritorno</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 400296</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 1.1.4</p>
+                                <p class="card-text"><strong>Autore:</strong> Bartolini Luciano</p>
+                                <p class="card-text"><strong>Editore:</strong> Edizioni Essegi</p>
+                                <p class="card-text"><strong>Traduttore:</strong> Traduttore 9</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1989, novembre</p>
+                                <p class="card-text"><strong>Pagine:</strong>/</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Singoli artisti, monografie d'arte</p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Italia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Italiano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> Allegati, Dedica autografa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!-- Card 10 -->
+
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Le avventure di Guizzardi</a></h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Inventario:</strong> 401095</p>
+                                <p class="card-text"><strong>Collocazione:</strong> CDT BP 4.7.11</p>
+                                <p class="card-text"><strong>Autore:</strong> Celati Gianni</p>
+                                <p class="card-text"><strong>Editore:</strong> Einaudi</p>
+                                <p class="card-text"><strong>Traduttore:</strong> /</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text"><strong>Data di edizione:</strong> 1973, marzo</p>
+                                <p class="card-text"><strong>Pagine:</strong> 167</p>
+                                <p class="card-text"><strong>Soggetto:</strong> Narrativa moderna e contemporanea </p>
+                                <p class="card-text"><strong>Qualificatore geografico:</strong> Italia</p>
+                                <p class="card-text"><strong>Qualificatore linguistico:</strong> Italiano</p>
+                                <p class="card-text"><strong>Indicazioni manoscritte:</strong> Dedica autografa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container my-4">
+        <!-- barra previous/next -->
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" id="prev-page">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" data-page="1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                <!-- Aggiungi altre pagine secondo necessità -->
+                <li class="page-item">
+                    <a class="page-link" href="#" id="next-page">Next</a>
+                </li>
+            </ul>
+        </nav>                 
+
+    <!-- PREFOOTER -->
+
+            <section class="prefooter-section" style="text-align:center;">
+                <div class="pre-footer" style="display: inline-block;"> Impostazioni | Credits | Licenze</div>
+                <div style="display: inline-block; margin-top: 10px;"><a href="#top"><img src="img/freccia.png" width="30" height="30" alt="Freccia per tornare in alto"></a></div>
+            </section>
+
+    <!-- FOOTER -->
+
+            <footer class="footer bg-light mt-5 p-3 text-center">
+                <p>&copy; 2024 | Elena Sacchini | Corso di Digital Humanities</p>
+            </footer>
+
+
+    <!--Link a JS e Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+
+
+</html>

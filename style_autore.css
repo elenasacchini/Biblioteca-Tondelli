@@ -1,0 +1,75 @@
+/*style_autore.css*/
+
+/*CSS Header*/
+        .header {
+            margin-bottom: 2rem; 
+        }
+
+    /*prima sezione CITAZIONE*/
+
+        .quote-section {
+            background-color: #ffffff; 
+            color: #000000; 
+            padding-top: 2rem; 
+            padding-bottom: 2rem; 
+        }
+
+        .blockquote {
+            font-size: 1.5rem; 
+            color: #000000; 
+            text-align: center; 
+        }
+
+        .blockquote p {
+            font-style: italic; /* citazione in corsivo*/
+        }
+
+        .blockquote-footer {
+            color: #555555; /*grigio*/
+            font-size: 1rem; 
+            font-style: normal; 
+            text-align: center; 
+        }
+
+
+
+    /*Seconda sezioone Pier Vittorio Tondelli*/
+
+        .section-content {
+            background-color: #1a6a70; 
+            color: #ffffff; 
+            padding: 2rem; 
+            
+            margin-bottom: 4rem; 
+        }
+
+        .section-content h1 {
+            text-align: center; 
+            margin-bottom: 1rem; 
+        }
+
+        .section-content p {
+            margin-bottom: 1rem; 
+        }
+
+        .source-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .source-link:hover {
+            text-decoration: underline;
+        }
+
+    /*terza sezione con Tabella dati*/
+
+        .full-width-section {
+                    width: 100%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+        .table-container {
+                    max-width: 600px;
+                    width: 100%;
+                    margin: 0 auto; 
+                }

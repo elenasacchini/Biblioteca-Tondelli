@@ -1,0 +1,115 @@
+/*style_catalogo.css*/
+
+
+
+    /*Layout dell'HEADER*/
+        .catalog-title {
+            text-align: center;
+            font-size: 3rem;
+        }
+    /* Layout dell'ASIDE */
+        aside {
+            background-color: #1a6a70;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            flex: 0 0 250px;
+        }
+
+        /* Colore dei LINK all'interno dell'aside */
+        aside a {
+            color: #ffffff; 
+            text-decoration: none;
+        }
+
+        /* passaggio del mouse */
+        aside a:hover {
+            color: #e0e0e0; 
+        }
+
+        /* elementi della lista nell'aside */
+        aside .list-group-item {
+            background-color: #1a6a70;
+            border: none;
+            color: #ffffff;
+        }
+
+        aside .list-group-item a {
+            color: #ffffff;
+        }
+
+        aside .list-group-item a:hover {
+            color: #e0e0e0;
+        }
+
+        /* contenitore del catalogo */
+        .catalog-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .catalog-content {
+            flex-grow: 1;
+        }
+
+        /*filtri*/
+        .filters {
+            margin-bottom: 1rem;
+            background-color: #28a745; 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        /* briciole di pane */
+        .breadcrumb {
+            background-color: transparent; 
+            color: #ffffff; 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        /* filtri */
+        #filter-section {
+            margin-top: 20px;
+            }
+
+        #filter-input {
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+            padding: 5px;
+            width: calc(100% - 50px); /* Regola la larghezza se necessario */
+            }
+
+        #filter-button {
+            background-color: #007bff; /* Colore di sfondo per il pulsante di filtro */
+            color: #ffffff; /* Colore del testo del pulsante */
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+        #filter-button:hover {
+            background-color: #0056b3; /* Colore di sfondo del pulsante al passaggio del mouse */
+            }
+
+    /*layout del grafico GOOGLE CHARTS*/
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #chart_div {
+            width: 100%; 
+            max-width: 100%; 
+            height: auto; 
+        }
+
+
+    /* Layout della SEZIONE CENTRALE */
+        body {
+            background-color: #f8f9fa;
+        }

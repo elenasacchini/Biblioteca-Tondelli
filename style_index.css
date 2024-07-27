@@ -1,0 +1,18 @@
+/*style_index.css*/
+
+/*CSS di index.html*/
+
+body {
+	    padding-top: 56px; /* Spazio per la navbar fissa */
+	    background-color: #f8f9fa;
+	}
+
+	.intro {
+	    background-color: #ffffff;
+	    padding: 50px 0;
+	}
+
+	.carousel-inner img {
+	    height: 500px;
+	    object-fit: cover;
+	}
